@@ -509,6 +509,7 @@ if (!params.merged_gtf) {
         process fastq_star_alignment_For_discovery {
             
             tag { file_tag }
+	    label 'para'
 
             publishDir pattern: "",
                     path: { params.out_folder + "/Result/Star_alignment" }, mode: 'copy', overwrite: true
@@ -575,6 +576,7 @@ if (!params.merged_gtf) {
         process fastq_tophat_alignment_For_discovery {
             
             tag { file_tag }
+	    label 'para'
 
             publishDir pattern: "",
                     path: { params.out_folder + "/Result/tophat_alignment" }, mode: 'copy', overwrite: true

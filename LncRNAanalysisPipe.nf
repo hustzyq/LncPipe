@@ -395,7 +395,7 @@ if (!params.merged_gtf) {
     println print_purple("Analysis from fastq file")
     //Match the pairs on two channels
 
-    reads = params.input_folder + params.fastq_ext
+    reads = params.input_folder + "/" + params.fastq_ext
 
     /*
     * Step 3: QC (FastQC/AfterQC/Fastp) of raw reads
